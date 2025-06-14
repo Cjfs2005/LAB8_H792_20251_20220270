@@ -24,10 +24,10 @@ CREATE TABLE IF NOT EXISTS `mydb`.`monitoreo_climatico` (
   `idMonitoreo` INT NOT NULL AUTO_INCREMENT,
   `ciudad` VARCHAR(100) NOT NULL,
   `fecha` DATE NOT NULL,
-  `temperaturaPromedioDia` DECIMAL(2,3) NOT NULL,
+  `temperaturaPromedioDia` DECIMAL(5,3) NOT NULL,
   `condicionFrecuente` VARCHAR(100) NOT NULL,
-  `temperaturaMax` DECIMAL(2,3) NOT NULL,
-  `temperaturaMin` DECIMAL(2,3) NOT NULL,
+  `temperaturaMax` DECIMAL(5,3) NOT NULL,
+  `temperaturaMin` DECIMAL(5,3) NOT NULL,
   PRIMARY KEY (`idMonitoreo`))
 ENGINE = InnoDB;
 
